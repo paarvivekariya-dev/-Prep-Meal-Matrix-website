@@ -1,0 +1,159 @@
+/* Google Font ni css linkd kariyu che */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+ID:wght@100..400&family=Valley+Sans:ital,wght@0,100..900;1,100..900&family=Yuyu+Short&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Edu QLD Hand", cursive;
+}
+/* ama blu puperl color type che */
+:root{
+    --nav-color:#98E8DE;
+    --text-col:#3E3E75;
+    --bolder-text-col:#4E1F6E;
+    --mid-dark-col:#45A9A9;
+}
+/* aama Green and crem sed par colors che */
+:root{
+    --dark-col:#450C3F;
+    --mideam-col:#caf062;
+    --Prima-col:#F5FBDA;
+    --light-col:#D9EFBD;
+   --green-col:#597928;
+   --lightgreen-col:#91AC67;
+}
+/* scroll karva thi jatkomari nahi jay pam dheere thi niche scroll kare te mate */
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+      background: linear-gradient(rgba(127, 128, 79, 0.45), rgba(120, 133, 90, 0.45)), 
+                        url(/PagesFolder/hero\ section\ img\ \(5\).jpg) no-repeat center ;
+      background-size:cover;
+      font-family: 'Poppins', sans-serif;
+     color: var(--dark-col);
+     padding: 30px 15px;
+ }
+
+ /* Outer Container */
+ .recipe-wrapper {
+     max-width: 780px;
+     margin: 0 auto;
+     background-color: transparent;
+ }
+
+        /* Menu Links Color */
+.navbar .navbar-nav .nav-link {
+    color: var(--bolder-text-col);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Active Link Color (જે પેજ ખુલ્લું હોય તે) */
+.navbar .navbar-nav{
+    color: var(--Prima-col)
+}
+
+
+/* Hover Effect (માઉસ લઈ જાવ ત્યારે) */
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--green-col) ;
+    text-decoration:none;
+}
+
+ /* Main Card Container */
+        .recipe-card {
+             background: linear-gradient(rgba(139, 124, 124, 0.45), rgba(193, 219, 133, 0.45)), 
+                        url(/hero\ section\ img\ \(3\).jpg) no-repeat center ;
+            background-size:cover;
+            border: 1px solid #80ac64;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+            padding: 24px;
+        }
+
+        /* Header Style */
+        .recipe-title {
+            letter-spacing: 2px;
+            font-weight: 700;
+            color: var(--dark-col);
+        }
+
+        .recipe-subtitle {
+            font-style: italic;
+            color: var(--dark-col);
+            font-size: 1.05rem;
+        }
+
+
+        /* Image Style */
+        .recipe-hero-img {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 5px;
+            box-shadow: 2px 4px 7px rgb(43, 41, 41);
+        }
+
+        /* Timing & Info Bar */
+        .meta-bar {
+            border-top: 1.5px solid #222222;
+            border-bottom: 1.5px solid #222222;
+            font-size: 0.85rem;
+            padding: 10px 0;
+        }
+
+        .meta-item strong {
+            color: var(--dark-col);
+        }
+
+        /* Section Headings */
+        .section-head {
+            letter-spacing: 1.5px;
+            font-weight: 700;
+            font-size: 1.05rem;
+            color: var(--dark-col);
+        }
+
+        /* Ingredients & Directions Section */
+        .content-box {
+            font-size: 0.90rem;
+            line-height: 1.6;
+        }
+
+        .border-right-divider {
+            border-right: 1px solid #e0e0e0;
+        }
+
+        .ingredients-list {
+            list-style-type: disc;
+            padding-left: 18px;
+            margin-bottom: 0;
+        }
+
+        .ingredients-list li {
+            margin-bottom: 6px;
+            color: var(--text-col);
+        }
+
+        /* Directions */
+        .direction-step {
+            margin-bottom: 10px;
+            color: var(--dark-col);
+        }
+
+        .direction-step strong {
+            color:var(--text-col);
+        }
+
+        @media (max-width: 767px) {
+            .border-right-divider {
+                border-right: none;
+                border-bottom: 1px solid #e0e0e0;
+                padding-bottom: 15px;
+                margin-bottom: 15px;
+            }
+        }

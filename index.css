@@ -1,0 +1,53 @@
+  /* Google Font ni css linkd kariyu che */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+ID:wght@100..400&family=Valley+Sans:ital,wght@0,100..900;1,100..900&family=Yuyu+Short&display=swap');
+
+        :root{
+    --dark-col:#450C3F;
+    --mideam-col:#caf062;
+    --Prima-col:#F5FBDA;
+    --light-col:#D9EFBD;
+   --green-col:#597928;
+   --lightgreen-col:#91AC67;
+}
+body{
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(139, 124, 124, 0.45), rgba(193, 219, 133, 0.45)), 
+                        url('hero\ section\ img\ \(3\).jpg') no-repeat center ;
+   background-size:cover;
+    
+}
+.login-card{
+    width: 100%;
+    max-width: 420px;
+    border-radius: 20px;
+    backdrop-filter: blur(1px);
+    padding: 30px 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+   border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.login-card img{
+    width: 50px;
+    height: 50px;
+}
+.login-card h3{
+    color: var(--dark-col);
+}
+.login-btn{
+    width: 100%;
+    background-color: var(--green-col);
+    color: var(--Prima-col);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.login-btn:hover {
+    background-color:var(--lightgreen-col);
+    color: var(--dark-col);
+ }
+ .form-control:focus {
+            border-color:var(--green-col);
+            box-shadow:0 10px 30px var(--mideam-col);
+        }

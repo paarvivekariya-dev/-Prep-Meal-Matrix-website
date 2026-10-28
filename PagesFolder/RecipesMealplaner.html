@@ -1,0 +1,169 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image" href="recipes icon (2).png">
+        <!-- Bootstrap links -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <!-- mealplaner css ni link -->
+        <link rel="stylesheet" href="RecipesMealplaner.css">
+        <title>Recipes PrepMeal Matrix</title>
+    </head>
+    <body>
+    <!-- navbar  -->
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg  fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center text-decoration-none" href="#">
+                <img src="/Logo Icons (3).png" alt="Logo" class="rounded-pill me-2">
+                Prep Meal Matrix
+            </a>
+            <!-- Mobile Toggler Button (Small screen mate 3 line vadu button) -->
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar">
+            <span class="navbar-toggler-icon "></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-decoration-none">
+                    <li class="nav-item"><a class="nav-link" href="/MealPlaner.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold" href="#">Recipes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ShoppingMealplaner.html">Shopping List</a></li>
+                    <li class="nav-item"><a class="nav-link" href="RegistrationForm.html">Registration</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="recipe-header text-center">
+        <div class="container">
+            <h1 class="fw-bold text-uppercase">Healthy & Tasty Recipes</h1>
+            <p class="mb-0">Browse through our collection of quick and easy meal-prep recipes.</p>
+        </div>
+    </section>
+
+    <!-- Recipes Cards Grid Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                
+                <!-- Recipe 1 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card recipe-card h-100 shadow-sm border-0">
+                        <img src="Zucchini Noodles with Avocado Pesto (1).jpg" class="card-img-top" alt="Zucchini Noodles">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-success recipe-badge">Vegan</span>
+                            </div>
+                            <h5 class="card-title fw-bold">Zucchini Noodles With Avocado Pesto</h5>
+                            <p class="card-text  small flex-grow-1">Fresh spiralized zucchini tossed in rich, creamy homemade avocado pesto sauce.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 2 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card recipe-card h-100 shadow-sm border-0">
+                        <img src="Air-Fryer Paneer Tikka & Salad (1).jpg" class="card-img-top" alt="Paneer Tikka">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-warning text-dark recipe-badge">High Protein</span>
+                            </div>
+                            <h5 class="card-title fw-bold">Air Fryer Paneer Tikka Salad</h5>
+                            <p class="card-text  small flex-grow-1">Crispy spiced paneer cubes served with fresh green veggies and mint dressing.</p>
+                         </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 3 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card recipe-card h-100 shadow-sm border-0">
+                        <img src="hero section img (7).jpg" class="card-img-top" alt="Cauliflower Rice">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-info text-dark recipe-badge">Low Carb</span>
+                            </div>
+                            <h5 class="card-title fw-bold">Cauliflower Rice Stir-Fry</h5>
+                            <p class="card-text  small flex-grow-1">Light and healthy grated cauliflower sautéed with bell peppers, beans, and herbs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 4 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card recipe-card h-100 shadow-sm border-0">
+                        <img src="Ragi sendwich.jpg" class="card-img-top" alt="Veg Sandwich">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-primary recipe-badge">Quick Meal</span>
+                            </div>
+                            <h5 class="card-title fw-bold">Raw Veggie Whole Wheat Sandwich</h5>
+                            <p class="card-text  small flex-grow-1">Loaded with crunchy cucumbers, tomatoes, and low-fat spread on toasted wheat bread.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 5 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card recipe-card h-100 shadow-sm border-0">
+                        <img src="Quinoa Bowl.jpg" class="card-img-top" alt="Diet Bowl">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-success recipe-badge">Healthy Bowl</span>
+                            </div>
+                                <h5 class="card-title fw-bold">Mediterranean Quinoa Bowl</h5>
+                                <p class="card-text small flex-grow-1">Nutrient-dense quinoa bowl topped with olives, fresh veggies, and olive oil.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recipe 6 -->
+                <div class="col-12 col-sm-6 col-lg-4">
+                    <div class="card recipe-card h-100 shadow-sm border-0">
+                        <img src="Chia and oat bowl.jpg" class="card-img-top" alt="Fruit Oats">
+                        <div class="card-body d-flex flex-column">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-warning text-dark recipe-badge">Breakfast</span>
+                            </div>
+                                <h5 class="card-title fw-bold">Overnight Chia & Oat Bowl</h5>
+                                <p class="card-text small flex-grow-1">Creamy oats soaked with chia seeds, seasonal berries, and a drizzle of honey.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Simple Centered Footer -->
+    <footer class="custom-footer pt-4 pb-3 border-top">
+        <div class="container text-center">
+            <div class="d-flex justify-content-center align-items-center mb-2">
+                <img src="/Logo Icons (3).png" alt="Logo" class="me-2">
+                <h4 class="fw-bold mb-0">PrepScale</h4>
+            </div>
+            <p class="small mb-3">Plan • Cook • Enjoy</p>
+            <div class="d-flex justify-content-center gap-3 mb-3">
+                <a href="#" class="text-dark"><i class="bi bi-instagram fs-5"></i></a>
+                <a href="#" class="text-dark"><i class="bi bi-facebook fs-5"></i></a>
+                <a href="#" class="text-dark"><i class="bi bi-pinterest fs-5"></i></a>
+                <a href="#" class="text-dark"><i class="bi bi-youtube fs-5"></i></a>
+            </div>
+            <p class="small mb-0 ">© 2026 PrepScale. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <!-- Bootstrap ni javascript links -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </body>
+    </html>

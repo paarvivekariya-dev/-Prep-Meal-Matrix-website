@@ -1,0 +1,98 @@
+/* Google Font ni css linkd kariyu che */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+ID:wght@100..400&family=Valley+Sans:ital,wght@0,100..900;1,100..900&family=Yuyu+Short&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Valley Sans", sans-serif;
+}
+/* ama blu puperl color type che */
+:root{
+    --nav-color:#98E8DE;
+    --text-col:#3E3E75;
+    --bolder-text-col:#4E1F6E;
+    --mid-dark-col:#45A9A9;
+}
+/* aama Green and crem sed par colors che */
+:root{
+    --dark-col:#450C3F;
+    --mideam-col:#caf062;
+    --Prima-col:#F5FBDA;
+    --light-col:#D9EFBD;
+   --green-col:#597928;
+   --lightgreen-col:#91AC67;
+}
+
+body {
+            background-color:whitesmoke;
+            color: var(--dark-col);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 10px;
+           
+        }
+
+/* Main Outer Box */
+.register-container {
+    background-color: var(--light-col);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgb(68, 49, 49);
+    max-width: 1200px;
+    width: 100%;
+} 
+/* Left Side Image Div */
+.img-side {
+    background:linear-gradient(rgba(179, 95, 187, 0.45), rgba(134, 117, 211, 0.45)),
+     url("form\ food\ img\ \(1\).jpg") no-repeat center ;
+    background-size: cover;
+    min-height: 100%;
+}
+/* Right Side Form Div */
+ 
+ .form-side img{
+    height: 50px;
+    width: 50px; 
+    object-fit: cover;
+   
+ }
+
+.form-select option{
+    background-color: var(--lightgreen-col);
+    color: var(--dark-col);
+}
+/* last button style */
+ .submit-btn {
+     background-color:var(--green-col);
+     color:var(--light-col);
+     font-weight: 600;
+     border-radius: 30px;
+     padding: 10px;
+     transition: all 0.3s ease;
+     }
+ .submit-btn:hover {
+     background-color: var(--lightgreen-col);
+     color: var(--dark-col);
+     }
+
+   .home-btn{
+     background-color:transparent;
+     color:var(--dark-col);
+     border: 2px solid var(--green-col);
+     font-weight: 600;
+     border-radius: 30px;
+     padding: 10px;
+     text-align: center;
+     transition: all 0.3s ease;
+    text-decoration:none;
+   }   
+.home-btn:hover {
+    background-color: var(--green-col);
+    color: var(--light-col);
+    text-decoration: none; /* Hover vakhte pan underline na aave */
+}
+ 

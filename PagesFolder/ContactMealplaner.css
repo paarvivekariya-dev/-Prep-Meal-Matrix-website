@@ -1,0 +1,224 @@
+
+/* Google Font ni css linkd kariyu che */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+ID:wght@100..400&family=Valley+Sans:ital,wght@0,100..900;1,100..900&family=Yuyu+Short&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Valley Sans", sans-serif;
+}
+/* ama blu puperl color type che */
+/* :root{
+    --nav-color:#98E8DE;
+    --text-col:#3E3E75;
+    --bolder-text-col:#4E1F6E;
+    --mid-dark-col:#45A9A9;
+} */
+/* aama Green and crem sed par colors che */
+:root{
+    --dark-col:#450C3F;
+    --mideam-col:#caf062;
+    --Prima-col:#F5FBDA;
+    --light-col:#D9EFBD;
+}
+
+/* Navbar Background */
+.bg-color{
+    background-color: var(--mideam-col);
+    
+   
+}
+/*  Logo Text Color */
+.navbar-dark .navbar-brand{
+     color:var(--dark-col) ;
+}
+.navbar .navbar-brand:hover{
+    color:var(--dark-col);
+}
+/*Menu Links Color */
+.navbar-dark .navbar-nav .nav-link{
+    color:var(--dark-col) ;
+}
+
+/* Hover Effect right side menu mate(Mouse lay jav tyare color badlay) */
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: var(--Prima-col);
+    text-decoration:underline;
+}
+
+/* Jyare screen small thay tyare navbar ma right side 3 line vadu box dekhadva mate */
+.navbar .navbar-toggler{
+    border: 2px solid var(--dark-col);
+}
+
+.dropdown-menu .dropdown-item{
+    color: var(--dark-col);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* hero section start styling */
+
+/* padding thi navbar ni niche image aave jo padding nahi lagaviye ti image navber na top ma tuch thai jase */
+.hero{
+    padding-top: 15px;
+    margin: 0;
+   
+}
+
+/* Slider image ni height aur fit */
+.carousel-img{
+    display: block;
+    width: 100%;
+    height: 80vh;
+    min-height: 450px;
+    object-fit:cover;
+    
+}
+/* image uper na h1 and p text ne proprliy center karva mate */
+.carousel-caption{
+    color: var(--dark-col);
+    top: 10%;
+    bottom: 0;
+    left: 10%;
+    right: 40%;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.carousel-caption h2{
+    font-weight: 700;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5);
+    
+}
+.carousel-caption p{
+    font-size: 1.25rem;
+    font-weight: 500;
+    max-width: 650px;
+    text-shadow: 0 1px 8px rgba(0, 0, 0, 0.5);
+}
+/* slidbar ma middel ma button che teni style aapva */
+.carousel-caption a{
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--light-col);
+    background-color: var(--text-col);
+    transition: 1s;
+}
+.carousel-caption a:hover{
+    color: var(--light-col);
+    background-color: var(--mideam-col);
+     transform: scale(0.9,0.9);
+     opacity: 0.8;
+     box-shadow: 3px 4px 5px black;
+}
+
+/* hero card section styling start */
+
+/* populor recipces ni left right line mate ni style */
+.line{
+    width: 180px;
+    border: 1px solid var(--dark-col);
+}
+/* populor no font color cheng karva mate */
+.linefont{
+    color: var(--dark-col);
+}
+
+/* recipes card style */
+.card{
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid rgb(179, 174, 174);
+    box-shadow: 4px 4px 5px rgb(210, 224, 224);
+
+}
+.card img{
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+}
+.card .btn{
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--dark-col);
+    background-color: var(--mideam-col);
+    transition: transform 0.3s ease;
+}
+.card a:hover{
+     transform: scale(1.08);
+    
+}
+
+/* third section style icon with hading text */
+
+.icon-circle{
+        height: 80px;
+        width: 80px;
+        padding: auto;
+        background-color:#e8f5e9;
+        color: #5f8132;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 40px;
+        flex-shrink: 0;
+}
+/* responsive karva mate */
+@media(min-width: 992px){
+    .border-end-lg{
+        border-right: 2px solid #e9ecef;
+    }
+    
+}
+@media(max-width:390px){
+   .card{
+     
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+
+   }
+}
+
+/* footer style */
+
+/* footer background mate */
+.custom-footer{
+    background-color: var(--mideam-col);
+    color: var(--dark-col);
+
+}
+/* link ni bottom space mate */
+.footer-links li{
+    margin-bottom: 6px;
+}
+
+/* footer link ma hover and color mate */
+.footer-links a{
+    color: var(--dark-col);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: all 0.3s ease-in;
+}
+.footer-links a:hover{
+    color: var(--mid-dark-col);
+    padding-left: 6px;
+}
+/* social icon hover animation */
+.social-icons a{
+    color: var(--dark-col);
+    display: inline-block;
+    transition: transform 0.2s ease, color 0.2s ease;
+    opacity: 0.85;
+}
+.social-icons a:hover{
+    transform: translateY(-3px);
+    color: var(--Prima-col);
+    opacity: 1;
+}

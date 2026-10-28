@@ -1,0 +1,103 @@
+
+/* Google Font ni css linkd kariyu che */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+ID:wght@100..400&family=Valley+Sans:ital,wght@0,100..900;1,100..900&family=Yuyu+Short&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Valley Sans", sans-serif;
+}
+/* ama blu puperl color type che */
+/* :root{
+    --nav-color:#98E8DE;
+    --text-col:#3E3E75;
+    --bolder-text-col:#4E1F6E;
+    --mid-dark-col:#45A9A9;
+} */
+/* aama Green and crem sed par colors che */
+:root{
+    --dark-col:#450C3F;
+    --mideam-col:#caf062;
+    --Prima-col:#F5FBDA;
+    --light-col:#D9EFBD;
+}
+:root{
+     --brown-col:#6E3511;
+    --green-col:#597928;
+    --lightgreen-col:#91AC67;
+    --peachlight-col:#FCECD8;
+}
+body{
+    background-color: var(--peachlight-col);
+}
+
+/* navbar */
+.navbar{
+    background-color: var(--green-col);
+}
+.navbar-brand img{
+    width:40px;
+    color: var(--dark-col);
+}
+
+    /* navbar band ma logo pachi ancher tag aapel che aetle tema hover karva thi color cheng thay to te aem ne ame j dekhay aetle  */
+.navbar-brand:hover{
+    color: var(--dark-col);
+    
+}
+
+/*Menu Links Color */
+ .navbar-brand, .nav-link{
+    color:var(--dark-col) ;
+    
+    
+}
+
+/* Hover Effect right side menu mate(Mouse lay jav tyare color badlay) */
+ .navbar-nav, .nav-link:hover{
+    color: var(--light-col);
+    text-decoration:underline;
+}
+/* Jyare screen small thay tyare navbar ma right side 3 line vadu box dekhadva mate */
+.navbar .navbar-toggler{
+    border: 2px solid var(--dark-col);
+}
+/* Small screen / Mobile mate vadhu margin aapo */
+@media (max-width: 991px) {
+    .recipe-header {
+        margin-top: 85px;
+    }
+}
+
+
+
+/* Recipes page mate simple extra styling */
+        .recipe-header {
+            background-color: var(--light-col);
+            color: var(--dark-col);
+            border-bottom: 1px solid #e9ecef;
+            padding: 40px 0;
+            margin-top: 70px;
+        }
+        .recipe-card img {
+            height: 220px;
+            object-fit: cover;
+        }
+        .recipe-card{
+            color: var(--dark-col);
+        }
+        .recipe-badge {
+            font-size: 0.8rem;
+        }
+
+
+    /* footer style     */
+    .custom-footer img{
+        width:35px;
+    }
+    .custom-footer{
+        background-color: var(--lightgreen-col);
+        color: var(--dark-col);
+    }

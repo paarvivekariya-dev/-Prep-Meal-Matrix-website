@@ -1,0 +1,110 @@
+
+/* Google Font ni css linkd kariyu che */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Dancing+Script:wght@400..700&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+ID:wght@100..400&family=Valley+Sans:ital,wght@0,100..900;1,100..900&family=Yuyu+Short&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Valley Sans", sans-serif;
+}
+/* ama blu puperl color type che */
+:root{
+    --nav-color:#98E8DE;
+    --text-col:#3E3E75;
+    --bolder-text-col:#4E1F6E;
+    --mid-dark-col:#45A9A9;
+}
+/* aama Green and crem sed par colors che */
+:root{
+    --dark-col:#450C3F;
+    --mideam-col:#caf062;
+    --Prima-col:#F5FBDA;
+    --light-col:#D9EFBD;
+}
+:root{
+     --brown-col:#6E3511;
+    --green-col:#597928;
+    --lightgreen-col:#91AC67;
+    --peachlight-col:#FCECD8;
+ }
+
+
+.navbar{
+    background-color: var(--green-col);
+}
+
+.navbar-brand img{
+    width:40px;
+    color: var(--dark-col);
+}
+/* Navbar Brand (Logo Name) Color */
+.navbar .navbar-brand {
+    color: var(--Prima-col); 
+}
+
+/* Menu Links Color */
+.navbar .navbar-nav .nav-link {
+    color: var(--Prima-col) 
+}
+
+/* Active Link Color (જે પેજ ખુલ્લું હોય તે) */
+.navbar .navbar-nav .nav-link.active {
+    color: var(--mideam-col)
+}
+
+/* Hover Effect (માઉસ લઈ જાવ ત્યારે) */
+.navbar .navbar-nav .nav-link:hover {
+    color: var(--light-col) ;
+    text-decoration: underline;
+}
+
+.shopping-header {
+            background-color: var(--mideam-col);
+            color: var(--dark-col);
+            border-bottom: 1px solid #e9ecef;
+            padding: 45px 0;
+            margin-top: 75px;
+        }
+
+        .list-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .list-group-item {
+            border: none;
+            border-bottom: 1px solid #f1f1f1;
+            padding: 12px 16px;
+        }
+
+        .list-group-item:last-child {
+            border-bottom: none;
+        }
+
+        .form-check-input:checked {
+            background-color: var(--green-col);
+            border-color: var(--green-col);
+        }
+
+        .category-badge {
+            background-color: var(--light-col);
+            color: var(--dark-col);
+            font-weight: 600;
+        }
+
+        @media (max-width: 991px) {
+            .shopping-header {
+                margin-top: 85px;
+            }
+        }
+/* footer style     */
+    .custom-footer img{
+        width:35px;
+    }
+    .custom-footer{
+        background-color: var(--lightgreen-col);
+        color: var(--dark-col);
+    }
